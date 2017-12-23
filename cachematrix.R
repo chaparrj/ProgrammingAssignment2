@@ -3,6 +3,11 @@
 
 ## Write a short comment describing this function
 
+## makeCacheMatrix creates a matrix data type that includes four functions
+## along with the matrix, creating an S3 object
+## Original makeVector function provided as example was tweaked to make it 
+## work with a matrix and solve function instead of mean
+
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -18,6 +23,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## Write a short comment describing this function
+
+## Returns the inverse matrix of a makeCacheMatrix object
+## using values stored in environment if matrix passed as argument
+## has not changed or calling solve function to run actual calculations.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
